@@ -150,7 +150,7 @@ If you use this data or method, please cite:
 
 ```
 Anish Singh Walia (2026). Why Your P50 Latency Doesn't Matter: Measured Evidence
-from Serverless Inference. https://github.com/anishsingh20/p50-latency-doesnt-matter
+from Serverless Inference. https://github.com/anishsingh20/serverless-inference-tail-latency-study
 ```
 
 ## License
