@@ -1,0 +1,3904 @@
+{
+  "model": "openai-gpt-oss-120b",
+  "timestamp": "2026-07-27T08:43:57Z",
+  "baseline_sweep": {
+    "concurrency_1": {
+      "summary": {
+        "n": 72,
+        "p50_ms": 1202.0,
+        "p95_ms": 2028.1,
+        "p99_ms": 2108.4,
+        "p99_to_p50_ratio": 1.75
+      },
+      "records": [
+        {
+          "ttft_ms": 1039.3,
+          "total_ms": 1780.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed attention keys and values, which avoids redundant matrix multiplications for tokens that have already been processed. This reduces"
+        },
+        {
+          "ttft_ms": 971.5,
+          "total_ms": 1915.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing intermediate activations (e.g., KV\u2011cache in transformer attention) so that repeated or sequential prompts don\u2019t require recomput"
+        },
+        {
+          "ttft_ms": 913.0,
+          "total_ms": 1833.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of repeated computation by reusing previously generated token embeddings and attention keys/values, which cuts latency and lowers the cost per token during inference. This enables faster, more"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 2187.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 1061.8,
+          "total_ms": 2561.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computations by storing intermediate results\u2014like key\u2011value attention states or previously generated token embeddings\u2014so the model can reuse them instead of recomputing each"
+        },
+        {
+          "ttft_ms": 1006.3,
+          "total_ms": 1952.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token representations, which cuts redundant matrix multiplications and reduces latency. This also lowers memory bandwidth and computational costs, enabling higher"
+        },
+        {
+          "ttft_ms": 1161.9,
+          "total_ms": 1837.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed attention keys, values, and intermediate activations, cutting the per\u2011token computation"
+        },
+        {
+          "ttft_ms": 1540.6,
+          "total_ms": 1808.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations or token"
+        },
+        {
+          "ttft_ms": 1135.7,
+          "total_ms": 2169.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings or attention keys/values, which reduces redundant matrix multiplications and memory accesses. This cuts latency and GPU/"
+        },
+        {
+          "ttft_ms": 1533.0,
+          "total_ms": 2464.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing intermediate token embeddings or attention results so the model can reuse them instead of recomputing from"
+        },
+        {
+          "ttft_ms": 1173.2,
+          "total_ms": 2356.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations (e.g., past key\u2011value states) so that each new token can be generated without re\u2011processing the entire prompt"
+        },
+        {
+          "ttft_ms": 1783.6,
+          "total_ms": 1858.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching accelerates LLM inference"
+        },
+        {
+          "ttft_ms": 1267.0,
+          "total_ms": 2365.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations\u2014especially key/value pairs in attention layers\u2014so the model can avoid recomputing the entire forward"
+        },
+        {
+          "ttft_ms": 1097.3,
+          "total_ms": 1971.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings or intermediate activations, which reduces redundant computation and lowers latency. This also cuts memory bandwidth and energy usage"
+        },
+        {
+          "ttft_ms": 1303.5,
+          "total_ms": 2282.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention keys/values, dramatically reducing"
+        },
+        {
+          "ttft_ms": 2107.2,
+          "total_ms": 2440.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token representations"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 1926.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 1398.6,
+          "total_ms": 1857.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing intermediate token representations (e.g., key\u2011value pairs"
+        },
+        {
+          "ttft_ms": 1027.2,
+          "total_ms": 2764.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed attention keys, values, and hidden states, which speeds up token\u2011by\u2011token generation and cuts the amount of GPU memory"
+        },
+        {
+          "ttft_ms": 1580.9,
+          "total_ms": 2120.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations (e.g., key\u2011value pairs in transformer attention) so that repeated or long\u2011context inputs can be"
+        },
+        {
+          "ttft_ms": 930.6,
+          "total_ms": 1933.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed activations (especially KV\u2011cache for transformer attention), which dramatically reduces the number of matrix multiplications needed for each new token."
+        },
+        {
+          "ttft_ms": 1471.5,
+          "total_ms": 2051.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations (e.g., KV\u2011"
+        },
+        {
+          "ttft_ms": 1219.4,
+          "total_ms": 2147.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computations by storing intermediate activations (e.g., KV\u2011cache for attention), letting the model reuse prior work instead of re\u2011processing the same tokens,"
+        },
+        {
+          "ttft_ms": 1688.2,
+          "total_ms": 1972.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed hidden states"
+        },
+        {
+          "ttft_ms": 983.0,
+          "total_ms": 1899.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate states (e.g., KV\u2011cache in transformer decoders), which cuts the amount of duplicated matrix multiplications for"
+        },
+        {
+          "ttft_ms": 2111.4,
+          "total_ms": 2760.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing previously computed token representations, which eliminates redundant calculations and reduces latency for each new request. This also lowers"
+        },
+        {
+          "ttft_ms": 1046.0,
+          "total_ms": 1962.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations (e.g., attention keys/values) from previous tokens, letting the model reuse them instead of recomputing them for"
+        },
+        {
+          "ttft_ms": 1558.7,
+          "total_ms": 1897.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of repeated computation by storing intermediate activations (e"
+        },
+        {
+          "ttft_ms": 2031.0,
+          "total_ms": 2883.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of redundant computation by storing and reusing intermediate key\u2011value attention states from previous tokens, which speeds up inference and cuts GPU memory bandwidth. This makes serving"
+        },
+        {
+          "ttft_ms": 2025.7,
+          "total_ms": 2192.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference"
+        },
+        {
+          "ttft_ms": 1231.9,
+          "total_ms": 1928.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations, reducing the amount of redundant matrix multiplications for repeated or long-context inputs. This"
+        },
+        {
+          "ttft_ms": 1209.3,
+          "total_ms": 1936.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token representations, which reduces the amount of matrix multiplications needed for each new token and thus lowers latency"
+        },
+        {
+          "ttft_ms": 1859.7,
+          "total_ms": 2588.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed attention keys, values, and intermediate states, which dramatically speeds up token\u2011by\u2011token generation and cuts the per"
+        },
+        {
+          "ttft_ms": 1000.6,
+          "total_ms": 1807.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed hidden states or token embeddings, which reduces redundant matrix multiplications and memory accesses. This cut\u2011down in"
+        },
+        {
+          "ttft_ms": 1270.5,
+          "total_ms": 2570.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing recent computation results (e.g., attention key/value tensors), which reduces the amount of work needed for each new token and"
+        },
+        {
+          "ttft_ms": 1115.2,
+          "total_ms": 1978.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing previously computed intermediate states (e.g., attention key/value tensors), which eliminates redundant calculations for repeated or sequential"
+        },
+        {
+          "ttft_ms": 902.8,
+          "total_ms": 1735.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing intermediate activations (e.g., past key\u2011value states) so the model can reuse them instead of recomputing the entire context"
+        },
+        {
+          "ttft_ms": 866.5,
+          "total_ms": 1648.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed activations (e.g., KV\u2011cache for transformer attention), which cuts the per\u2011token compute from O(sequence\u202f"
+        },
+        {
+          "ttft_ms": 1032.0,
+          "total_ms": 1745.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate token representations, allowing the model to reuse them instead of recomputing the entire context for each new token. This speeds"
+        },
+        {
+          "ttft_ms": 1057.4,
+          "total_ms": 1890.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and intermediate activations, which cuts the amount of redundant matrix multiplications and reduces latency. This not only"
+        },
+        {
+          "ttft_ms": 1651.5,
+          "total_ms": 1759.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM"
+        },
+        {
+          "ttft_ms": 1507.2,
+          "total_ms": 1756.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing recently computed activ"
+        },
+        {
+          "ttft_ms": 1566.8,
+          "total_ms": 2004.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate states"
+        },
+        {
+          "ttft_ms": 943.3,
+          "total_ms": 1891.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention results, which cuts the amount of repetitive matrix multiplications needed for each new prompt. This reduces latency,"
+        },
+        {
+          "ttft_ms": 1505.4,
+          "total_ms": 1928.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate results\u2014especially attention keys"
+        },
+        {
+          "ttft_ms": 1133.4,
+          "total_ms": 1757.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computations by storing intermediate activations\u2014especially KV\u2011cache for attention\u2014so each token can be generated with only a small incremental"
+        },
+        {
+          "ttft_ms": 1193.1,
+          "total_ms": 1882.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces repeated computation by storing intermediate activations or token probabilities, so subsequent inference calls can reuse those results instead of recomputing"
+        },
+        {
+          "ttft_ms": 996.4,
+          "total_ms": 1764.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention states, which reduces the amount of redundant matrix multiplications per generation step. This"
+        },
+        {
+          "ttft_ms": 1003.6,
+          "total_ms": 1684.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention results, dramatically reducing the amount of redundant matrix operations needed for each new"
+        },
+        {
+          "ttft_ms": 1578.0,
+          "total_ms": 1815.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed attention keys,"
+        },
+        {
+          "ttft_ms": 680.3,
+          "total_ms": 1834.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed token embeddings or attention results, dramatically cutting latency and memory bandwidth during LLM inference. This acceleration enables real\u2011time responses, lower hardware costs, and higher throughput for large\u2011scale or edge"
+        },
+        {
+          "ttft_ms": 1099.7,
+          "total_ms": 1917.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations\u2014especially key\u2011value pairs for transformer self\u2011attention\u2014so that repeated or long\u2011running prompts can reuse these"
+        },
+        {
+          "ttft_ms": 981.9,
+          "total_ms": 1915.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and reusing intermediate token representations, which speeds up inference and lowers the latency for long or repeated prompts. This also cuts the required GPU memory"
+        },
+        {
+          "ttft_ms": 1194.8,
+          "total_ms": 1825.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing previously computed attention keys, values, or token embeddings, so the model can reuse them"
+        },
+        {
+          "ttft_ms": 2035.6,
+          "total_ms": 2657.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed activations\u2014especially KV\u2011cache for transformer attention\u2014so the model"
+        },
+        {
+          "ttft_ms": 909.7,
+          "total_ms": 1763.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations (e.g., KV\u2011cache in transformer attention), which eliminates redundant matrix multiplications for tokens that have"
+        },
+        {
+          "ttft_ms": 1643.5,
+          "total_ms": 1959.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed"
+        },
+        {
+          "ttft_ms": 1232.3,
+          "total_ms": 2155.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations (e.g., key\u2011value pairs in transformer attention), allowing subsequent tokens to be generated with only a modest incremental"
+        },
+        {
+          "ttft_ms": 1011.8,
+          "total_ms": 1758.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and reusing intermediate token representations, which speeds up inference and lowers the required GPU memory. This improves throughput and cost efficiency"
+        },
+        {
+          "ttft_ms": 1294.0,
+          "total_ms": 1774.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings or attention results, dramatically cutting the repeated"
+        },
+        {
+          "ttft_ms": 1659.5,
+          "total_ms": 1892.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing intermediate computation results (such as attention key/value tensors) so that repeated or long-context queries can be processed without recom"
+        },
+        {
+          "ttft_ms": 1044.0,
+          "total_ms": 1847.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed attention keys and values, eliminating redundant matrix multiplications for repeated tokens and thus reducing latency and GPU workload."
+        },
+        {
+          "ttft_ms": 1108.1,
+          "total_ms": 2109.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention results, drastically reducing the number of matrix multiplications needed for each new token. This cuts"
+        },
+        {
+          "ttft_ms": 1985.0,
+          "total_ms": 2195.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing"
+        },
+        {
+          "ttft_ms": 1656.2,
+          "total_ms": 1917.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching stores intermediate activation states (e.g., KV\u2011cache"
+        },
+        {
+          "ttft_ms": 1167.3,
+          "total_ms": 1944.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of repeated computation by storing intermediate activations (e.g., key\u2011value pairs in transformer attention), allowing subsequent tokens to be generated with"
+        },
+        {
+          "ttft_ms": 1405.4,
+          "total_ms": 1966.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed attention keys, values, and intermediate activations"
+        },
+        {
+          "ttft_ms": 1071.2,
+          "total_ms": 1936.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate token representations, allowing the model to reuse them instead of recomputing from scratch for each new token. This speeds up inference,"
+        },
+        {
+          "ttft_ms": 1167.7,
+          "total_ms": 2029.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations\u2014especially key\u2011value pairs in transformer self\u2011attention\u2014so the model need not recompute them"
+        },
+        {
+          "ttft_ms": 1953.7,
+          "total_ms": 2613.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations (e.g., KV\u2011cache) from previous tokens, allowing the model to reuse them instead of recomputing the entire"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 1947.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 769.6,
+          "total_ms": 3070.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings or attention results, which cuts the amount of repeated matrix multiplications and memory accesses. This reduces latency, lowers GPU/CPU load, and cuts energy"
+        },
+        {
+          "ttft_ms": 1491.9,
+          "total_ms": 1854.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate token representations, allowing the model to reuse"
+        },
+        {
+          "ttft_ms": 1573.2,
+          "total_ms": 1813.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously calculated token"
+        },
+        {
+          "ttft_ms": 1501.5,
+          "total_ms": 1966.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing previously computed token embeddings or attention keys/values"
+        }
+      ]
+    },
+    "concurrency_5": {
+      "summary": {
+        "n": 65,
+        "p50_ms": 1092.6,
+        "p95_ms": 2000.7,
+        "p99_ms": 2366.9,
+        "p99_to_p50_ratio": 2.17
+      },
+      "records": [
+        {
+          "ttft_ms": 1291.1,
+          "total_ms": 1838.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed attention keys, values, or token embeddings, eliminating redundant"
+        },
+        {
+          "ttft_ms": 1002.3,
+          "total_ms": 1913.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations (e.g., KV\u2011cache in transformer models), which eliminates redundant matrix multiplications for tokens that have"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 1913.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 1049.4,
+          "total_ms": 1958.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed key\u2011value hidden states, so the model can avoid recomputing attention for tokens that have already been processed. This"
+        },
+        {
+          "ttft_ms": 971.0,
+          "total_ms": 2486.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed attention key/value tensors, which avoids redundant matrix multiplications for repeated context tokens and dramatically lowers latency. This also cuts memory bandwidth"
+        },
+        {
+          "ttft_ms": 629.1,
+          "total_ms": 1863.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed key\u2013value states for tokens that don\u2019t change, which cuts the per\u2011token cost from O(sequence\u202f\u00d7\u202fmodel\u202fsize) to O(1) for the repeated"
+        },
+        {
+          "ttft_ms": 994.8,
+          "total_ms": 1893.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing previously computed attention keys, values, or intermediate activations, so each new token can be processed without recomputing the entire context. This"
+        },
+        {
+          "ttft_ms": 1439.1,
+          "total_ms": 2078.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously generated token embeddings and attention results, which speeds up inference and lowers the per\u2011token latency of large language models. This not only"
+        },
+        {
+          "ttft_ms": 1092.6,
+          "total_ms": 1984.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed token embeddings and attention results, which dramatically speeds up inference and lowers GPU memory and power usage. This enables real\u2011time"
+        },
+        {
+          "ttft_ms": 2457.8,
+          "total_ms": 2883.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations"
+        },
+        {
+          "ttft_ms": 1698.2,
+          "total_ms": 1897.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by re"
+        },
+        {
+          "ttft_ms": 2315.7,
+          "total_ms": 2579.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing"
+        },
+        {
+          "ttft_ms": 1107.6,
+          "total_ms": 2915.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of repeated computation by storing intermediate activations (e.g., key/value pairs in attention layers), letting the model reuse them for subsequent tokens instead of recomput"
+        },
+        {
+          "ttft_ms": 1424.4,
+          "total_ms": 2167.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed hidden states, reducing the number of expensive matrix multiplications needed for each new token. This cuts latency"
+        },
+        {
+          "ttft_ms": 1583.9,
+          "total_ms": 1888.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations (e.g., KV\u2011"
+        },
+        {
+          "ttft_ms": 1731.9,
+          "total_ms": 1893.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and"
+        },
+        {
+          "ttft_ms": 1101.0,
+          "total_ms": 1889.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and reusing intermediate token representations, which speeds up inference and lowers latency, especially for long prompts or repeated queries. This also"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 1860.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 1597.8,
+          "total_ms": 1882.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed token representations,"
+        },
+        {
+          "ttft_ms": 992.1,
+          "total_ms": 1831.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed activations\u2014especially KV\u2011cache for transformer attention\u2014so the model can skip recomputing expensive matrix multiplications"
+        },
+        {
+          "ttft_ms": 1131.5,
+          "total_ms": 1786.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed hidden states or token embeddings, which eliminates redundant matrix multiplications and drastically reduces latency"
+        },
+        {
+          "ttft_ms": 1039.3,
+          "total_ms": 1790.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations\u2014especially the key/value pairs in transformer attention\u2014so the model need not recom"
+        },
+        {
+          "ttft_ms": 1566.9,
+          "total_ms": 1771.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing"
+        },
+        {
+          "ttft_ms": 1018.1,
+          "total_ms": 1776.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed hidden states, reducing the amount of matrix multiplications needed for each new token. This cuts latency and"
+        },
+        {
+          "ttft_ms": 955.3,
+          "total_ms": 1783.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing intermediate token representations (e.g., KV\u2011cache in transformer layers), eliminating redundant computation for repeated or long-context sequences"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 1804.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 880.7,
+          "total_ms": 1713.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces repetitive computation by storing intermediate token representations, enabling the model to reuse them for subsequent steps instead of recomputing them from scratch. This dramatically lowers latency and memory usage"
+        },
+        {
+          "ttft_ms": 1573.4,
+          "total_ms": 1749.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by re"
+        },
+        {
+          "ttft_ms": 1002.9,
+          "total_ms": 1747.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and reusing intermediate token representations, which dramatically speeds up inference and cuts the memory bandwidth needed for large models. This efficiency enables"
+        },
+        {
+          "ttft_ms": 2250.9,
+          "total_ms": 2422.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing intermediate"
+        },
+        {
+          "ttft_ms": 968.3,
+          "total_ms": 1839.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations\u2014especially the key\u2011value pairs in transformer attention\u2014so the model can skip redundant matrix multiplications for"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 1768.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 1488.5,
+          "total_ms": 1806.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing recent computation"
+        },
+        {
+          "ttft_ms": 1662.9,
+          "total_ms": 2322.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed key\u2011value attention states, which eliminates redundant matrix multiplications and dramatically"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 1854.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 1026.3,
+          "total_ms": 1751.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention results, which reduces redundant matrix multiplications and cuts latency. This efficiency"
+        },
+        {
+          "ttft_ms": 1003.2,
+          "total_ms": 1819.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings or attention results, which cuts the amount of repetitive matrix multiplications and memory accesses required for each new prompt"
+        },
+        {
+          "ttft_ms": 1452.2,
+          "total_ms": 1789.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously generated token embeddings and attention states,"
+        },
+        {
+          "ttft_ms": 972.3,
+          "total_ms": 1706.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of redundant computation by storing and re\u2011using intermediate activations (e.g., key/value pairs in attention layers), letting the model generate each new token"
+        },
+        {
+          "ttft_ms": 1297.0,
+          "total_ms": 1678.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed activations\u2014especially the key/value"
+        },
+        {
+          "ttft_ms": 829.0,
+          "total_ms": 1610.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and reusing intermediate model activations (e.g., attention key/value pairs), which dramatically speeds up inference for long or repeated prompts. This"
+        },
+        {
+          "ttft_ms": 1998.1,
+          "total_ms": 3334.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention states, which cuts the amount of redundant matrix multiplications and memory accesses required for each new token."
+        },
+        {
+          "ttft_ms": 2001.3,
+          "total_ms": 2713.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed attention outputs or token embeddings, dramatically reducing the number of matrix multiplications needed for each new token. This lowers latency and"
+        },
+        {
+          "ttft_ms": 955.4,
+          "total_ms": 2094.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of redundant computation by storing and reusing previously computed token representations, which speeds up inference and cuts the cost of running large language"
+        },
+        {
+          "ttft_ms": 810.2,
+          "total_ms": 2104.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed token embeddings and attention results, dramatically speeding up inference and lowering GPU memory bandwidth demands. This leads to lower latency, higher throughput,"
+        },
+        {
+          "ttft_ms": 1536.3,
+          "total_ms": 2242.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by re\u2011using previously generated token embeddings or attention results, dramatically lowering the latency and GPU memory needed for each inference step. This acceleration"
+        },
+        {
+          "ttft_ms": 1519.5,
+          "total_ms": 1785.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate token representations, allowing the"
+        },
+        {
+          "ttft_ms": 1082.2,
+          "total_ms": 1771.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously generated token representations, which dramatically speeds up inference and lowers hardware costs. It also minimizes latency and energy consumption, making"
+        },
+        {
+          "ttft_ms": 859.2,
+          "total_ms": 1630.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of redundant computation by storing and reusing intermediate representations (e.g., key\u2011value attention caches) from previous tokens, which speeds up inference and lowers GPU"
+        },
+        {
+          "ttft_ms": 1289.6,
+          "total_ms": 1577.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed activations for"
+        },
+        {
+          "ttft_ms": 796.1,
+          "total_ms": 2693.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and reusing previously generated token embeddings or attention results, dramatically lowering latency and GPU load during inference. This enables faster, more cost\u2011effective responses, especially for long contexts or"
+        },
+        {
+          "ttft_ms": 1233.9,
+          "total_ms": 1563.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations (e.g., key\u2011value"
+        },
+        {
+          "ttft_ms": 859.1,
+          "total_ms": 1675.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed hidden states or token embeddings, which reduces the number of expensive matrix multiplications needed for each new token. This cuts latency"
+        },
+        {
+          "ttft_ms": 1330.3,
+          "total_ms": 1705.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed token embeddings and attention results, which speeds"
+        },
+        {
+          "ttft_ms": 1081.3,
+          "total_ms": 1674.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing intermediate computation results, reducing redundant processing of identical prompts or repeated token sequences."
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 1683.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 944.2,
+          "total_ms": 1686.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of redundant computation by storing intermediate activations or token embeddings, so the model can reuse them instead of recomputing from scratch for each new"
+        },
+        {
+          "ttft_ms": 1455.5,
+          "total_ms": 1746.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed token or attention states,"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 1839.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 902.6,
+          "total_ms": 1818.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate states (e.g., KV\u2011cache for attention), which reduces the amount of repeated matrix multiplications and memory bandwidth needed"
+        },
+        {
+          "ttft_ms": 1025.7,
+          "total_ms": 1877.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously calculated token embeddings and attention results, which speeds up inference and cuts the required GPU memory. This leads to lower latency"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 1831.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 1375.6,
+          "total_ms": 1717.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing intermediate activations or token"
+        },
+        {
+          "ttft_ms": 836.3,
+          "total_ms": 1602.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed attention keys/values and intermediate activations, reducing the number of expensive matrix multiplications needed for each new token. This"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 1664.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 879.9,
+          "total_ms": 1724.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of repetitive computation by storing intermediate token embeddings or attention results, allowing the model to reuse them for subsequent inference steps and thus speed up generation. This lowers"
+        },
+        {
+          "ttft_ms": 604.2,
+          "total_ms": 1732.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention results, which cuts the number of expensive matrix multiplications required for each new prompt. This reduces latency, lowers GPU compute costs, and enables higher query throughput for"
+        },
+        {
+          "ttft_ms": 1204.7,
+          "total_ms": 1708.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations (e.g., key\u2011value pairs in"
+        },
+        {
+          "ttft_ms": 932.3,
+          "total_ms": 1707.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces repetitive computation by reusing previously calculated attention key/value tensors, which cuts latency and GPU memory usage dramatically during long\u2011context or iterative generation. This speeds up inference"
+        },
+        {
+          "ttft_ms": 1393.9,
+          "total_ms": 1726.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed hidden states or"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 1708.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 861.0,
+          "total_ms": 1747.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations (e.g., KV\u2011cache in transformer decoders), so each new token can be generated using only the new input rather than re"
+        },
+        {
+          "ttft_ms": 1619.0,
+          "total_ms": 1793.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by"
+        },
+        {
+          "ttft_ms": 898.5,
+          "total_ms": 1714.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed hidden states or token embeddings, which cuts the number of expensive matrix multiplications needed for each new token. This reduces latency,"
+        },
+        {
+          "ttft_ms": 1320.9,
+          "total_ms": 1601.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations\u2014especially key\u2011value"
+        }
+      ]
+    },
+    "concurrency_20": {
+      "summary": {
+        "n": 74,
+        "p50_ms": 1257.2,
+        "p95_ms": 3103.8,
+        "p99_ms": 3631.6,
+        "p99_to_p50_ratio": 2.89
+      },
+      "records": [
+        {
+          "ttft_ms": 2628.3,
+          "total_ms": 3615.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token representations, which reduces redundant matrix multiplications and cuts latency dramatically. This also lowers GPU memory bandwidth and cost,"
+        },
+        {
+          "ttft_ms": 2796.3,
+          "total_ms": 3614.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention states, drastically cutting the amount of matrix multiplications needed for each"
+        },
+        {
+          "ttft_ms": 2704.6,
+          "total_ms": 3619.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching drastically reduces the amount of computation needed for each token by reusing previously calculated attention keys and values, which speeds up inference and cuts energy usage. This"
+        },
+        {
+          "ttft_ms": 2750.3,
+          "total_ms": 3624.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed key\u2011value attention states, so the model only processes new tokens instead of recomputing the"
+        },
+        {
+          "ttft_ms": 2627.5,
+          "total_ms": 3651.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing intermediate computation results\u2014especially attention keys/values for past tokens\u2014so the model can avoid recomputing the entire"
+        },
+        {
+          "ttft_ms": 2737.1,
+          "total_ms": 3647.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing intermediate computation results\u2014such as attention key/value matrices\u2014so the model doesn\u2019t need to recom"
+        },
+        {
+          "ttft_ms": 2676.3,
+          "total_ms": 3646.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing intermediate computation results\u2014especially KV (key\u2011value) states for previous tokens\u2014so the model need not"
+        },
+        {
+          "ttft_ms": 3614.7,
+          "total_ms": 3668.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces"
+        },
+        {
+          "ttft_ms": 2608.9,
+          "total_ms": 3670.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and reusing intermediate activations (e.g., key\u2011value pairs in attention layers), which speeds up inference and cuts the amount of GPU memory"
+        },
+        {
+          "ttft_ms": 2805.4,
+          "total_ms": 3669.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and reusing intermediate activations (e.g., attention key/value pairs) across successive tokens, which dramatically speeds"
+        },
+        {
+          "ttft_ms": 2666.1,
+          "total_ms": 3676.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate key\u2011value activations from previous tokens, so each new token can be generated with only a single forward pass instead of re\u2011processing"
+        },
+        {
+          "ttft_ms": 3151.4,
+          "total_ms": 3785.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate token representations, allowing the model to reuse them instead"
+        },
+        {
+          "ttft_ms": 2643.8,
+          "total_ms": 3813.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed attention keys, values, and intermediate activations, which eliminates redundant matrix multiplications and drastically reduces latency for long or"
+        },
+        {
+          "ttft_ms": 3078.2,
+          "total_ms": 3815.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings or attention results, dramatically cutting the number"
+        },
+        {
+          "ttft_ms": 2731.7,
+          "total_ms": 3816.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the latency and compute cost of LLM inference by reusing previously computed token embeddings or attention scores, avoiding redundant matrix multiplications for repeated or long"
+        },
+        {
+          "ttft_ms": 2623.7,
+          "total_ms": 3850.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing intermediate computation results (such as token\u2011level attention keys/values), so the model can reuse them instead of recomputing them"
+        },
+        {
+          "ttft_ms": 2766.3,
+          "total_ms": 3847.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching accelerates LLM inference by reusing previously computed attention keys and values, drastically reducing the amount of matrix multiplications needed for each new token"
+        },
+        {
+          "ttft_ms": 2600.5,
+          "total_ms": 3848.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching dramatically reduces the amount of repeated computation by reusing previously generated key\u2011value attention states, cutting latency and memory bandwidth during inference. This enables faster, more cost\u2011effective"
+        },
+        {
+          "ttft_ms": 3606.6,
+          "total_ms": 4770.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed activations (e.g., KV caches in transformer layers), which dramatically cuts latency and GPU memory bandwidth during inference,"
+        },
+        {
+          "ttft_ms": 2397.5,
+          "total_ms": 5020.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations, which cuts redundant matrix multiplications and reduces latency. This not only lowers computational cost and energy usage but also enables higher query throughput and more responsive"
+        },
+        {
+          "ttft_ms": 1765.9,
+          "total_ms": 2033.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed activ"
+        },
+        {
+          "ttft_ms": 1067.2,
+          "total_ms": 2071.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings or attention results, which cuts the amount of repeated matrix multiplications and memory accesses. This reduces latency, lowers compute"
+        },
+        {
+          "ttft_ms": 1491.3,
+          "total_ms": 2047.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing recent computation results\u2014such as key\u2011value pairs from transformer attention layers\u2014so the model can reuse them instead of recomputing the"
+        },
+        {
+          "ttft_ms": 1126.8,
+          "total_ms": 2077.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of repeated computation by storing intermediate activations (e.g., key\u2011value pairs for attention) from previous tokens, so each new token can be generated"
+        },
+        {
+          "ttft_ms": null,
+          "total_ms": 2071.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": ""
+        },
+        {
+          "ttft_ms": 1159.2,
+          "total_ms": 2061.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing previously computed intermediate activations (e.g., key\u2011value pairs in transformer attention), which eliminates redundant matrix"
+        },
+        {
+          "ttft_ms": 1217.1,
+          "total_ms": 2047.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations, which cuts the amount of repeated matrix multiplications and dramatically reduces latency and"
+        },
+        {
+          "ttft_ms": 1164.7,
+          "total_ms": 2048.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed token embeddings and attention results, dramatically decreasing latency and GPU memory usage during inference. This enables faster, more cost"
+        },
+        {
+          "ttft_ms": 1343.5,
+          "total_ms": 2082.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the need to recompute identical intermediate token representations, dramatically cutting latency and compute cost during inference. By storing these results, models can serve"
+        },
+        {
+          "ttft_ms": 1089.9,
+          "total_ms": 2089.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations (e.g., KV caches in transformer attention), which eliminates redundant matrix multiplications for each new token."
+        },
+        {
+          "ttft_ms": 1142.0,
+          "total_ms": 1962.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed token embeddings and attention results, which dramatically speeds up inference and cuts the high GPU memory and power costs of large language models. This efficiency"
+        },
+        {
+          "ttft_ms": 1754.3,
+          "total_ms": 2002.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and re"
+        },
+        {
+          "ttft_ms": 1075.5,
+          "total_ms": 2016.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention results, which cuts redundant matrix multiplications and reduces latency. This not only lowers the computational cost"
+        },
+        {
+          "ttft_ms": 807.3,
+          "total_ms": 2026.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations (e.g., KV caches for transformers), which cuts the amount of work needed for each new token and reduces latency. This also lowers computational load and"
+        },
+        {
+          "ttft_ms": 2329.8,
+          "total_ms": 2461.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing"
+        },
+        {
+          "ttft_ms": 1009.7,
+          "total_ms": 2545.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously computed token embeddings or attention results, which speeds up inference and lowers latency. This also cuts memory bandwidth and hardware usage, making large language"
+        },
+        {
+          "ttft_ms": 1056.0,
+          "total_ms": 2187.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of redundant computation by reusing previously computed token representations, which speeds up inference and cuts GPU/CPU cycles dramatically. This not only lowers latency and operational costs but"
+        },
+        {
+          "ttft_ms": 1095.3,
+          "total_ms": 2094.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and reusing intermediate token representations, which speeds up inference and lowers the latency for long or repeated prompts. This also cuts memory bandwidth and energy"
+        },
+        {
+          "ttft_ms": 2022.4,
+          "total_ms": 4088.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and reusing intermediate activations (e.g., KV\u2011cache in transformers), which cuts inference latency and cuts GPU memory bandwidth usage. This makes"
+        },
+        {
+          "ttft_ms": 1101.8,
+          "total_ms": 2024.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings or attention results, which cuts the amount of matrix multiplications needed for each new prompt. This reduces"
+        },
+        {
+          "ttft_ms": 3677.3,
+          "total_ms": 3888.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and reusing intermediate activations\u2014especially KV\u2011cache for transformer attention\u2014so each token can be generated with far"
+        },
+        {
+          "ttft_ms": 1165.4,
+          "total_ms": 2025.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed attention keys, values, and intermediate activations, which reduces the number of redundant matrix multiplications and"
+        },
+        {
+          "ttft_ms": 2012.0,
+          "total_ms": 2073.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up"
+        },
+        {
+          "ttft_ms": 1383.3,
+          "total_ms": 2112.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing previously generated token embeddings and attention results, letting the model reuse them for subsequent steps and dramatically cut inference"
+        },
+        {
+          "ttft_ms": 1099.3,
+          "total_ms": 2126.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention results, drastically reducing the number of matrix multiplications required for each new token. This lowers latency, cuts"
+        },
+        {
+          "ttft_ms": 1206.3,
+          "total_ms": 2123.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the need to recompute intermediate activations for repeated or overlapping inputs, dramatically lowering latency and GPU memory usage during inference. This makes LLMs more"
+        },
+        {
+          "ttft_ms": 1130.3,
+          "total_ms": 2132.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention results, dramatically reducing the amount of matrix multiplications needed for each new token. This lowers latency,"
+        },
+        {
+          "ttft_ms": 1192.4,
+          "total_ms": 2100.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing intermediate computation results\u2014especially key\u2011value pairs from transformer attention layers\u2014so the model can avoid recom"
+        },
+        {
+          "ttft_ms": 1121.8,
+          "total_ms": 2175.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing previously computed intermediate representations (e.g., attention key/value tensors), which eliminates redundant calculations for recurring inputs or tokens. This"
+        },
+        {
+          "ttft_ms": 1220.7,
+          "total_ms": 2077.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations\u2014especially the key\u2011value pairs from attention layers\u2014so that repeated or sequential inputs can be processed without re"
+        },
+        {
+          "ttft_ms": 1153.6,
+          "total_ms": 2161.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the need to recompute intermediate activations for repeated or overlapping inputs, dramatically cutting latency and GPU memory usage during inference. This speed\u2011up and resource saving make"
+        },
+        {
+          "ttft_ms": 1234.4,
+          "total_ms": 2094.8,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching dramatically reduces the latency and computational cost of LLM inference by reusing previously computed intermediate representations (e.g., KV\u2011cache for transformer attention) instead of recom"
+        },
+        {
+          "ttft_ms": 1136.6,
+          "total_ms": 2120.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings or attention results, drastically cutting the number of expensive matrix multiplications needed for each new token. This reduces"
+        },
+        {
+          "ttft_ms": 1246.9,
+          "total_ms": 2120.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations\u2014especially key\u2011value pairs in transformer attention\u2014so the model can avoid redundant matrix multiplications for"
+        },
+        {
+          "ttft_ms": 1174.2,
+          "total_ms": 2119.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and reusing intermediate token representations, which speeds up inference and cuts the high GPU/CPU cost of repeatedly processing the same context. This enables lower latency"
+        },
+        {
+          "ttft_ms": 2621.0,
+          "total_ms": 2956.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate"
+        },
+        {
+          "ttft_ms": 1306.8,
+          "total_ms": 2186.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing recent computation results\u2014especially the key\u2011value attention states\u2014so the model can avoid recomputing"
+        },
+        {
+          "ttft_ms": 2164.8,
+          "total_ms": 2353.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by"
+        },
+        {
+          "ttft_ms": 1020.8,
+          "total_ms": 2075.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations\u2014especially the key/value tensors in transformer self\u2011attention\u2014so the model need not recompute them for each"
+        },
+        {
+          "ttft_ms": 1071.2,
+          "total_ms": 2073.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of repeated computation by storing intermediate results (such as key\u2011value attention states) from previous tokens, which dramatically speeds up inference and cuts the required GPU memory"
+        },
+        {
+          "ttft_ms": 1087.1,
+          "total_ms": 2102.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed key\u2011value attention states, so the model only needs to process new tokens instead of re\u2011evaluating the entire prompt"
+        },
+        {
+          "ttft_ms": 760.3,
+          "total_ms": 2097.6,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by reusing previously generated token embeddings or attention results, which dramatically speeds up inference and cuts GPU memory usage. This makes serving large language models more cost\u2011effective and responsive, especially for high\u2011throughput or"
+        },
+        {
+          "ttft_ms": 1180.0,
+          "total_ms": 2059.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings or attention results, which dramatically reduces the number of matrix multiplications required for each new token"
+        },
+        {
+          "ttft_ms": 1659.0,
+          "total_ms": 2082.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces the amount of redundant computation by reusing previously computed token embeddings"
+        },
+        {
+          "ttft_ms": 1308.4,
+          "total_ms": 2118.3,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed activations (e.g., KV\u2011cache in transformer decoders), which cuts the amount of matrix multiplication needed for each new token. This reduces latency, cuts"
+        },
+        {
+          "ttft_ms": 1128.2,
+          "total_ms": 2072.0,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces latency and computational cost by reusing previously computed token embeddings or attention results, allowing the model to generate responses more quickly and with less hardware demand. This makes"
+        },
+        {
+          "ttft_ms": 1106.8,
+          "total_ms": 2097.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings or intermediate activations, cutting redundant matrix multiplications and dramatically lowering latency. This reduces computational cost and memory bandwidth"
+        },
+        {
+          "ttft_ms": 1051.1,
+          "total_ms": 2128.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed hidden states or token embeddings, which cuts down the number of matrix multiplications required for each new token. This reduces latency"
+        },
+        {
+          "ttft_ms": 985.2,
+          "total_ms": 2052.7,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by storing and reusing previously computed token embeddings or attention results, drastically cutting the number of expensive matrix multiplications needed for each new prompt. This reduces"
+        },
+        {
+          "ttft_ms": 1267.5,
+          "total_ms": 2117.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate activations (e.g., KV\u2011cache in transformer decoders), which cuts the"
+        },
+        {
+          "ttft_ms": 1056.1,
+          "total_ms": 2103.2,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate token representations (e.g., KV\u2011cache in transformer attention), so each new token can be generated using previously computed states instead of re\u2011"
+        },
+        {
+          "ttft_ms": 1039.8,
+          "total_ms": 2092.5,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing intermediate activations (e.g., KV\u2011cache for attention), which lets the model reuse past work instead of recomputing it for every"
+        },
+        {
+          "ttft_ms": 1862.0,
+          "total_ms": 2973.1,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed token embeddings and attention results, which cuts the number of costly matrix multiplications needed for each new prompt. This reduces latency, lowers"
+        },
+        {
+          "ttft_ms": 2177.1,
+          "total_ms": 3128.9,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching reduces redundant computation by storing and re\u2011using intermediate activations (e.g., KV\u2011cache for transformer layers), which speeds up each inference step and"
+        },
+        {
+          "ttft_ms": 1054.7,
+          "total_ms": 3040.4,
+          "prompt_tokens": 83,
+          "completion_tokens": 64,
+          "content": "Caching speeds up LLM inference by reusing previously computed intermediate states (e.g., KV\u2011cache in transformer models), which eliminates redundant matrix multiplications for tokens that have"
+        }
+      ]
+    }
+  },
+  "chained_session": {
+    "chain_summary": {
+      "n_chains": 30,
+      "p50_ms": 20884.4,
+      "p95_ms": 28775.8,
+      "p99_ms": 31709.9
+    },
+    "chains": [
+      {
+        "chain_index": 0,
+        "total_chain_ms": 23637.7,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2228.1,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2048.5,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1996.6,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1958.9,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3072.8,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2475.5,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2500.7,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3426.2,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1988.6,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1940.8,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 1,
+        "total_chain_ms": 21806.5,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1711.3,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2613.1,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1883.0,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2344.1,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2778.5,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1871.9,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1830.4,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1764.1,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3126.1,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1882.9,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 2,
+        "total_chain_ms": 20715.9,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1870.5,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2146.1,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1807.9,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2826.5,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1696.8,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1975.1,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2025.4,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2248.2,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1993.7,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2124.6,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 3,
+        "total_chain_ms": 17958.3,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2029.9,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1876.5,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2168.2,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1971.0,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2038.3,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 270.7,
+            "prompt_tokens": 187,
+            "completion_tokens": 4,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1859.0,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2156.1,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1818.8,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1768.9,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 4,
+        "total_chain_ms": 19574.3,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1595.4,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1791.4,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1937.8,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2012.4,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2066.5,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2345.3,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1778.7,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1880.2,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1843.9,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2321.7,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 5,
+        "total_chain_ms": 21780.2,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2037.6,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2129.8,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2068.8,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1914.3,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2331.5,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1992.2,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2078.5,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2193.3,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2842.0,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2191.1,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 6,
+        "total_chain_ms": 22125.2,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2120.7,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2006.1,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2244.4,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2343.1,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2643.4,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2113.0,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2086.7,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2147.9,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2170.8,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2248.0,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 7,
+        "total_chain_ms": 31603.4,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2029.5,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1985.3,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2526.0,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3982.5,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2987.9,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2232.6,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2064.3,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2156.7,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2010.5,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 9627.0,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 8,
+        "total_chain_ms": 31753.4,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 7614.1,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2783.7,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2094.5,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2082.3,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2083.7,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2401.6,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2662.1,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 4348.9,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2622.8,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3058.4,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 9,
+        "total_chain_ms": 25319.8,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2059.8,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2203.5,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2360.8,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2685.4,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 5633.7,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2123.4,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2182.0,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2131.9,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1896.5,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2041.9,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 10,
+        "total_chain_ms": 20155.1,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2263.3,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2031.4,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1852.1,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2073.9,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1971.8,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1821.9,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2501.5,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1781.9,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1911.5,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1944.7,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 11,
+        "total_chain_ms": 21127.4,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2259.2,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1881.9,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2205.2,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1905.8,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1915.3,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2056.1,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1894.7,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2928.4,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2025.4,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2054.4,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 12,
+        "total_chain_ms": 22749.0,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2008.6,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2009.8,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2898.5,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2082.1,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2150.1,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2057.8,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3043.5,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2101.2,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2144.1,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2252.0,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 13,
+        "total_chain_ms": 25113.7,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2109.3,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1862.8,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1979.0,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2701.1,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1836.9,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2595.5,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 4091.0,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2064.9,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2708.2,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3163.8,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 14,
+        "total_chain_ms": 22959.9,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2002.8,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2456.3,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1877.2,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2299.5,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1709.9,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1671.3,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1932.2,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1826.3,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 5382.1,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1801.2,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 15,
+        "total_chain_ms": 22069.3,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1665.4,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1883.3,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1860.1,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1956.8,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1915.5,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3499.0,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1964.0,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1872.1,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2655.8,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2796.2,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 16,
+        "total_chain_ms": 20138.6,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1780.8,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1653.8,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1731.1,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1626.7,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3786.4,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2517.1,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1720.0,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": 1391.6,
+            "total_ms": 1422.7,
+            "prompt_tokens": 229,
+            "completion_tokens": 51,
+            "content": "ok"
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1963.2,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1935.7,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 17,
+        "total_chain_ms": 19529.2,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1696.1,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2051.3,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1829.3,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1868.7,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1846.5,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2009.5,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1895.3,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2049.3,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2278.0,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2004.1,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 18,
+        "total_chain_ms": 20632.3,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2446.6,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1895.8,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1817.4,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2612.6,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2287.7,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1941.1,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1856.7,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1894.1,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2334.3,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1545.1,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 19,
+        "total_chain_ms": 17797.6,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1615.5,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1769.7,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1861.7,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1585.0,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2544.9,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1552.0,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1800.0,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1586.9,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1574.3,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1906.5,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 20,
+        "total_chain_ms": 17610.7,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1668.0,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1713.8,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": 951.8,
+            "total_ms": 1003.1,
+            "prompt_tokens": 124,
+            "completion_tokens": 33,
+            "content": "ok."
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1741.2,
+            "prompt_tokens": 146,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1736.8,
+            "prompt_tokens": 167,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2118.2,
+            "prompt_tokens": 188,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1911.8,
+            "prompt_tokens": 209,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1870.8,
+            "prompt_tokens": 230,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1930.3,
+            "prompt_tokens": 251,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1915.7,
+            "prompt_tokens": 272,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 21,
+        "total_chain_ms": 22184.5,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2042.5,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1744.7,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1699.3,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": 2273.3,
+            "total_ms": 2353.0,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": "**Chain\u202f21"
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1837.0,
+            "prompt_tokens": 169,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1854.4,
+            "prompt_tokens": 190,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1689.4,
+            "prompt_tokens": 211,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2501.2,
+            "prompt_tokens": 232,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 4754.9,
+            "prompt_tokens": 253,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1707.1,
+            "prompt_tokens": 274,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 22,
+        "total_chain_ms": 17143.3,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1736.6,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1680.5,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1684.9,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1829.2,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1807.3,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1635.1,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1661.6,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1748.8,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1650.8,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1707.4,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 23,
+        "total_chain_ms": 20735.9,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2788.7,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1794.7,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1621.4,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3123.9,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1754.4,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2130.7,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1809.9,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1881.8,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1923.0,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1906.2,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 24,
+        "total_chain_ms": 17932.9,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1683.3,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2188.7,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": 1308.7,
+            "total_ms": 1391.2,
+            "prompt_tokens": 124,
+            "completion_tokens": 41,
+            "content": "ok"
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1782.0,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1988.5,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1768.3,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1844.5,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1897.0,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1686.6,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1701.7,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 25,
+        "total_chain_ms": 20475.1,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1624.2,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1937.5,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1929.0,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1593.2,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1713.2,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1614.1,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1772.9,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 5027.3,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1613.1,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1649.5,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 26,
+        "total_chain_ms": 19183.7,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 2197.5,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2146.4,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1657.0,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1662.8,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1543.7,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1599.5,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3261.4,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1583.8,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1872.8,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1657.7,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 27,
+        "total_chain_ms": 21466.0,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1719.8,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1642.8,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1483.1,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1521.9,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2100.4,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2785.5,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1692.7,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1535.2,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 4433.6,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2549.9,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 28,
+        "total_chain_ms": 21032.9,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1913.2,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1798.3,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1603.2,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1911.9,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1837.4,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3047.9,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1553.9,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1573.5,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2234.1,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3558.6,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      },
+      {
+        "chain_index": 29,
+        "total_chain_ms": 20599.9,
+        "calls": [
+          {
+            "ttft_ms": null,
+            "total_ms": 1770.0,
+            "prompt_tokens": 82,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1899.7,
+            "prompt_tokens": 103,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1813.6,
+            "prompt_tokens": 124,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1706.9,
+            "prompt_tokens": 145,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 3056.9,
+            "prompt_tokens": 166,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2922.7,
+            "prompt_tokens": 187,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1803.0,
+            "prompt_tokens": 208,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 2074.2,
+            "prompt_tokens": 229,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1819.0,
+            "prompt_tokens": 250,
+            "completion_tokens": 64,
+            "content": ""
+          },
+          {
+            "ttft_ms": null,
+            "total_ms": 1733.0,
+            "prompt_tokens": 271,
+            "completion_tokens": 64,
+            "content": ""
+          }
+        ]
+      }
+    ]
+  }
+}

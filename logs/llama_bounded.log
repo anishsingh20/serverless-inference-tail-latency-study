@@ -1,0 +1,16 @@
+req 0: ttft=2645.3 total=51016.5 err=None
+req 1: ttft=2127.6 total=38140.2 err=None
+req 2: ttft=1832.2 total=40742.2 err=None
+req 3: ttft=1580.6 total=40263.0 err=None
+req 4: ttft=3389.4 total=45481.2 err=None
+req 5: ttft=1586.2 total=48758.8 err=None
+req 6: ttft=1809.6 total=43537.7 err=None
+req 7: ttft=2431.3 total=35930.6 err=None
+req 8: ttft=1652.7 total=51351.3 err=None
+req 9: ttft=1621.8 total=64080.4 err=None
+req 10: ttft=2228.4 total=39261.6 err=None
+req 11: ttft=2129.9 total=41918.5 err=None
+req 12: ttft=37418.8 total=88533.5 err=None
+req 13: ttft=1715.5 total=36836.3 err=None
+req 14: ttft=67601.2 total=101912.4 err=None
+done

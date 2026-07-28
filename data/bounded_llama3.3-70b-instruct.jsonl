@@ -1,0 +1,15 @@
+{"i": 0, "ttft_ms": 2645.3, "total_ms": 51016.5, "completion_tokens": 64, "error": null}
+{"i": 1, "ttft_ms": 2127.6, "total_ms": 38140.2, "completion_tokens": 64, "error": null}
+{"i": 2, "ttft_ms": 1832.2, "total_ms": 40742.2, "completion_tokens": 64, "error": null}
+{"i": 3, "ttft_ms": 1580.6, "total_ms": 40263.0, "completion_tokens": 64, "error": null}
+{"i": 4, "ttft_ms": 3389.4, "total_ms": 45481.2, "completion_tokens": 64, "error": null}
+{"i": 5, "ttft_ms": 1586.2, "total_ms": 48758.8, "completion_tokens": 64, "error": null}
+{"i": 6, "ttft_ms": 1809.6, "total_ms": 43537.7, "completion_tokens": 64, "error": null}
+{"i": 7, "ttft_ms": 2431.3, "total_ms": 35930.6, "completion_tokens": 64, "error": null}
+{"i": 8, "ttft_ms": 1652.7, "total_ms": 51351.3, "completion_tokens": 64, "error": null}
+{"i": 9, "ttft_ms": 1621.8, "total_ms": 64080.4, "completion_tokens": 64, "error": null}
+{"i": 10, "ttft_ms": 2228.4, "total_ms": 39261.6, "completion_tokens": 64, "error": null}
+{"i": 11, "ttft_ms": 2129.9, "total_ms": 41918.5, "completion_tokens": 64, "error": null}
+{"i": 12, "ttft_ms": 37418.8, "total_ms": 88533.5, "completion_tokens": 64, "error": null}
+{"i": 13, "ttft_ms": 1715.5, "total_ms": 36836.3, "completion_tokens": 64, "error": null}
+{"i": 14, "ttft_ms": 67601.2, "total_ms": 101912.4, "completion_tokens": 64, "error": null}

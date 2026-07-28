@@ -1,0 +1,5 @@
+# Only needed for analysis/analyze_results.py (tables + charts).
+# The measurement harness itself (harness/do_latency_bench.py) uses only
+# the Python 3 standard library.
+numpy==2.5.1
+matplotlib==3.11.1

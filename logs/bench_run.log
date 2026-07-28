@@ -1,0 +1,121 @@
+=== RUN STARTED 2026-07-27T08:39:35Z ===
+=== MODEL: mistral-3-14B start 08:39:35Z ===
+== Baseline sweep ==
+[baseline] concurrency=1, 75 requests
+[baseline] concurrency=5, 75 requests
+[baseline] concurrency=20, 75 requests
+== Chained session ==
+[chained] chain 0 done: 7362 ms total
+[chained] chain 1 done: 7520 ms total
+[chained] chain 2 done: 5122 ms total
+[chained] chain 3 done: 5384 ms total
+[chained] chain 4 done: 7315 ms total
+[chained] chain 5 done: 5952 ms total
+[chained] chain 6 done: 7362 ms total
+[chained] chain 7 done: 5694 ms total
+[chained] chain 8 done: 9279 ms total
+[chained] chain 9 done: 5820 ms total
+[chained] chain 10 done: 6935 ms total
+[chained] chain 11 done: 7858 ms total
+[chained] chain 12 done: 5722 ms total
+[chained] chain 13 done: 12252 ms total
+[chained] chain 14 done: 5571 ms total
+[chained] chain 15 done: 7018 ms total
+[chained] chain 16 done: 5243 ms total
+[chained] chain 17 done: 6591 ms total
+[chained] chain 18 done: 5932 ms total
+[chained] chain 19 done: 6287 ms total
+[chained] chain 20 done: 5508 ms total
+[chained] chain 21 done: 5495 ms total
+[chained] chain 22 done: 6130 ms total
+[chained] chain 23 done: 8229 ms total
+[chained] chain 24 done: 7039 ms total
+[chained] chain 25 done: 6469 ms total
+[chained] chain 26 done: 6457 ms total
+[chained] chain 27 done: 10919 ms total
+[chained] chain 28 done: 5497 ms total
+[chained] chain 29 done: 8071 ms total
+Wrote bench_results/results_mistral-3-14B.json
+=== MODEL: mistral-3-14B done 08:43:57Z ===
+=== MODEL: openai-gpt-oss-120b start 08:43:57Z ===
+== Baseline sweep ==
+[baseline] concurrency=1, 75 requests
+[baseline] concurrency=5, 75 requests
+[baseline] concurrency=20, 75 requests
+== Chained session ==
+[chained] chain 0 done: 23638 ms total
+[chained] chain 1 done: 21807 ms total
+[chained] chain 2 done: 20716 ms total
+[chained] chain 3 done: 17958 ms total
+[chained] chain 4 done: 19574 ms total
+[chained] chain 5 done: 21780 ms total
+[chained] chain 6 done: 22125 ms total
+[chained] chain 7 done: 31603 ms total
+[chained] chain 8 done: 31753 ms total
+[chained] chain 9 done: 25320 ms total
+[chained] chain 10 done: 20155 ms total
+[chained] chain 11 done: 21127 ms total
+[chained] chain 12 done: 22749 ms total
+[chained] chain 13 done: 25114 ms total
+[chained] chain 14 done: 22960 ms total
+[chained] chain 15 done: 22069 ms total
+[chained] chain 16 done: 20139 ms total
+[chained] chain 17 done: 19529 ms total
+[chained] chain 18 done: 20632 ms total
+[chained] chain 19 done: 17798 ms total
+[chained] chain 20 done: 17611 ms total
+[chained] chain 21 done: 22184 ms total
+[chained] chain 22 done: 17143 ms total
+[chained] chain 23 done: 20736 ms total
+[chained] chain 24 done: 17933 ms total
+[chained] chain 25 done: 20475 ms total
+[chained] chain 26 done: 19184 ms total
+[chained] chain 27 done: 21466 ms total
+[chained] chain 28 done: 21033 ms total
+[chained] chain 29 done: 20600 ms total
+Wrote bench_results/results_openai-gpt-oss-120b.json
+=== MODEL: openai-gpt-oss-120b done 08:57:58Z ===
+=== MODEL: llama-4-maverick start 08:57:58Z ===
+== Baseline sweep ==
+[baseline] concurrency=1, 75 requests
+[baseline] concurrency=5, 75 requests
+[baseline] concurrency=20, 75 requests
+== Chained session ==
+[chained] chain 0 done: 26635 ms total
+[chained] chain 1 done: 19990 ms total
+[chained] chain 2 done: 21166 ms total
+[chained] chain 3 done: 16847 ms total
+[chained] chain 4 done: 57743 ms total
+[chained] chain 5 done: 19141 ms total
+[chained] chain 6 done: 11688 ms total
+[chained] chain 7 done: 10103 ms total
+[chained] chain 8 done: 20753 ms total
+[chained] chain 9 done: 38678 ms total
+[chained] chain 10 done: 36332 ms total
+[chained] chain 11 done: 1221603 ms total
+[chained] chain 12 done: 46537 ms total
+[chained] chain 13 done: 35596 ms total
+[chained] chain 14 done: 25775 ms total
+[chained] chain 15 done: 33201 ms total
+[chained] chain 16 done: 17122 ms total
+[chained] chain 17 done: 19241 ms total
+[chained] chain 18 done: 26752 ms total
+[chained] chain 19 done: 29446 ms total
+[chained] chain 20 done: 47353 ms total
+[chained] chain 21 done: 47091 ms total
+[chained] chain 22 done: 37275 ms total
+[chained] chain 23 done: 20167 ms total
+[chained] chain 24 done: 14513 ms total
+[chained] chain 25 done: 23792 ms total
+[chained] chain 26 done: 28255 ms total
+[chained] chain 27 done: 23752 ms total
+[chained] chain 28 done: 35006 ms total
+[chained] chain 29 done: 31624 ms total
+Wrote bench_results/results_llama-4-maverick.json
+=== MODEL: llama-4-maverick done 09:37:16Z ===
+=== MODEL: llama3.3-70b-instruct (sweep + 1 chain) start 09:37:16Z ===
+== Baseline sweep ==
+[baseline] concurrency=1, 75 requests
+Terminated
+=== MODEL: llama3.3-70b-instruct done 10:53:56Z ===
+=== ALL DONE 2026-07-27T10:53:56Z ===
