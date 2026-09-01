@@ -8,7 +8,7 @@
 - **Volume:** 1,590 recorded requests across four models, zero failed requests
 - **Everything in this repository is what actually ran:** the harness, the raw per-request JSON, the console logs, the analysis code, and the charts it produced.
 
-This repository is the evidence base for a companion article, *"Why Your P50 Latency Doesn't Matter: A Practitioner's Framework for Evaluating Inference Latency Claims"* (DigitalOcean Community, forthcoming).
+This repository is the evidence base for a companion article, *["Why Your P50 Latency Doesn't Matter: A Practitioner's Framework for Evaluating Inference Latency Claims"](https://www.digitalocean.com/community/tutorials/p50-vs-p99-latency-llm-inference)* (DigitalOcean Community).
 
 ---
 
